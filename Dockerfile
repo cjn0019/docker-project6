@@ -4,7 +4,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 # Build instructions..
 RUN apt-get -y update
-RUN apt-get install -y gcc python3 python3-pip git python3-psycopg2 
+RUN apt-get install -y gcc python3 python3-pip git python3-psycopg2 libpcre3 libpcre3-dev
 RUN pip3 install uwsgi boto3 flask
 RUN git clone "https://github.com/cjn0019/python-image-gallery.git"
 
