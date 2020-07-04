@@ -17,4 +17,4 @@ WORKDIR "/python-image-gallery"
 # ENV FLASK_APP=app.py
 # ENV FLASK_ENV=development
 # CMD ["uwsgi", "--http", ":5555", "--module", "app:app", "--master", "--processes", "4", "--threads", "2"]
-# CMD ["uwsgi", "-s", "localhost:5555", "--manage-script-name", "--mount", "/=gallery.ui.app:app"]
+CMD ["uwsgi", "--http", ":5555", "--manage-script-name", "--mount", "/=gallery.ui.app:app", "--master", "--processes", "4", "--threads", "2"]
