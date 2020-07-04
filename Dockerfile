@@ -8,6 +8,7 @@ RUN apt-get install -y gcc python3 python3-pip git python3-psycopg2 libpcre3 lib
 RUN pip3 install uwsgi boto3 flask
 RUN git clone "https://github.com/cjn0019/python-image-gallery.git"
 RUN useradd -m pyserver
+RUN echo '(9!1bT=*lgmKkeFu#8<HlxyXJ&|W$Y]G'> password
 
 EXPOSE 5555
 USER pyserver
